@@ -30,6 +30,18 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
     // automatically mining the contract deployment transaction. There is no effect on live networks.
     autoMine: true,
   });
+  const deploymentResult = await deploy("LazyMintNestedNFT", {
+    from: deployer,
+    args: [],
+    log: true,
+    autoMine: true,
+  });
+  await deploy("NFTMarketplace", {
+    from: deployer,
+    args: [deploymentResult.address],
+    log: true,
+    autoMine: true,
+  });
 
   // Get the deployed contract
   // const yourContract = await hre.ethers.getContract("YourContract", deployer);
@@ -39,4 +51,4 @@ export default deployYourContract;
 
 // Tags are useful if you have multiple deploy files and only want to run one of them.
 // e.g. yarn deploy --tags YourContract
-deployYourContract.tags = ["YourContract"];
+deployYourContract.tags = ["YourContract","NFTMarketplace","LazyMintNestedNFT"];

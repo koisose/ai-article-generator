@@ -1,3 +1,24 @@
+# Ai Article generator and article marketplace like substack
+
+I create an article generator so that you can easily create article, and also create a smart contract
+NFT and NFTMarketplace to buy the access to article just like substack you need to subscribe to
+comment or read, but with my app i dont create a subscribe coz of the time constraint, so im just
+creating buy only and no sell
+
+# Video Demo
+
+# Dont forget to add this
+
+```
+NEXT_PUBLIC_NFT_STORAGE=
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_KEY=
+```
+
+# I still havent gas optimize my contract so please dont deploy live my contract
+
+You may need open ai key coz i rely it to generate article
+
 # Scaffold-Eth 2
 
 ⚠️ This project is currently under active development. Things might break. Feel free to check the open issues & create new ones.
