@@ -19,6 +19,10 @@ NEXT_PUBLIC_SUPABASE_KEY=
 
 You may need open ai key coz i rely it to generate article
 
+# Website
+
+https://nextjs-flame-five-21.vercel.app/
+
 # Scaffold-Eth 2
 
 ⚠️ This project is currently under active development. Things might break. Feel free to check the open issues & create new ones.
