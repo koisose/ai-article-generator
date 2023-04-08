@@ -7,6 +7,8 @@ creating buy only and no sell
 
 # Video Demo
 
+https://youtu.be/md2SPRD4PUg
+
 # Dont forget to add this
 
 ```
